@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home {
+  background-color: #afd4e2;
+  height: 800px;
+  background-image: url(../public/House.png), url(../public/Arrow_01.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 0px bottom, 48% 85%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 0 50px 0 180px;
+  text-transform: capitalize;
+  /* position: fixed; */
+  width: 100%;
+  min-height: 100px;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+a {
+  font-size: 21px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #1e3240;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 40%;
+  > a {
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #1e3240;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+
+.home-text {
+  height: 100%;
+  font-size: 90px;
+  line-height: 120%;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  font-weight: 600;
+  color: #1e3240;
+  margin-top: 150px;
+  margin-left: 130px;
+}
+
+.content {
+  /* position: absolute;
+  left: 55%;
+  top: 55%;
+  -webkit-transform: translate(-100%, -70%);
+  transform: translate(-100%, -70%); */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+.home_brandName {
+  color: #1e3240;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  margin-top: 30px;
+  margin-left: 160px;
+  width: 25%;
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects {
+  background: #1e3240;
   color: white;
+  padding: 18px 24px 18px 24px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  + button {
+    margin-left: 40px;
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact {
+  background: transparent;
+  color: #1e3240;
+  border: 1px solid #1e3240;
+  font-size: 14px;
+  border-radius: 1px;
+  padding: 18px 24px 18px 24px;
+  outline: none;
+  cursor: pointer;
 }
